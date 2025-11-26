@@ -33,7 +33,7 @@ const AddProduct = () => {
         formData.append('product', image);
 
         // Upload image
-        await fetch('http://localhost:4000/upload', {
+        await fetch('https://e-commerce-backend-jwbc.onrender.com/upload', {
             method: 'POST',
             headers: { Accept: 'application/json' },
             body: formData
@@ -44,7 +44,7 @@ const AddProduct = () => {
             console.log(product);
 
             // Save product
-            await fetch('http://localhost:4000/addproduct', {
+            await fetch('https://e-commerce-backend-jwbc.onrender.com/addproduct', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
